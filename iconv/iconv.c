@@ -445,6 +445,6 @@ toobig:
 starved:
 	err = EINVAL;
 end:
-	errno = err;
+//	errno = err;
 	return x;
 }

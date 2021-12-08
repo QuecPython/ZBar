@@ -11,13 +11,7 @@ $(NAME)_SRCS += \
 	zbar/scanner.c    	\
 	zbar/symbol.c     	\
 	zbar/decoder/code39.c			\
-	zbar/decoder/code93.c			\
-	zbar/decoder/databar.c			\
 	zbar/decoder/code128.c			\
-	zbar/decoder/ean.c			\
-	zbar/decoder/codabar.c			\
-	zbar/decoder/i25.c			\
-	zbar/decoder/pdf417.c			\
 	zbar/decoder/qr_finder.c			\
 	zbar/qrcode/bch15_5.c			\
 	zbar/qrcode/binarize.c			\
@@ -55,7 +49,8 @@ $(NAME)_CFLAGS = \
 	-Wno-error=implicit-fallthrough= \
 	-Wno-error=pointer-sign \
 	-Wno-error=int-conversion \
-	-Wno-error=unused-const-variable=
+	-Wno-error=unused-const-variable= \
+	-Wno-error=unused-but-set-variable
 	
 
 
